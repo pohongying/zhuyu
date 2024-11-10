@@ -1,0 +1,1455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="80dc736a-4942-4a07-875f-48e85e2e13c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/im-client/src/main/java/com/luoyi/imclient/listener/MessageListenerMulticaster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/aspect/OnlineCheckAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/fastdfs/client/ErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/fastdfs/client/FastDFSException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/fastdfs/client/FastDFSUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/fastdfs/client/FileCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/fastdfs/client/FileResponseData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/fastdfs/config/FastDFSConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/fastdfs/config/FastDFSProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/fastdfs/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/fastdfs/web/FileObjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/rabbitmq/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/rabbitmq/receiver/VerifyCodeReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/SensitiveWordService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/netty/IMServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/im-platform.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/im-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-client/src/main/java/com/bx/imclient/IMAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-client/src/main/java/com/luoyi/imclient/IMAutoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-client/src/main/java/com/bx/imclient/IMClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-client/src/main/java/com/luoyi/imclient/IMClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-client/src/main/java/com/bx/imclient/annotation/IMListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/annotation/IMListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-client/src/main/java/com/bx/imclient/listener/MessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-client/src/main/java/com/luoyi/imclient/listener/MessageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-client/src/main/java/com/bx/imclient/listener/MessageListenerMulticaster.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-client/src/main/java/com/bx/imclient/sender/IMSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-client/src/main/java/com/luoyi/imclient/sender/IMSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-client/src/main/java/com/bx/imclient/task/AbstractMessageResultTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-client/src/main/java/com/luoyi/imclient/multicast/AbstractMessageMultiCastTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-client/src/main/java/com/bx/imclient/task/GroupMessageResultResultTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-client/src/main/java/com/luoyi/imclient/multicast/GroupMessageResultResultTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-client/src/main/java/com/bx/imclient/task/PrivateMessageResultResultTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-client/src/main/java/com/luoyi/imclient/multicast/PrivateMessageResultResultTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-client/src/main/java/com/bx/imclient/task/SystemMessageResultResultTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-client/src/main/java/com/luoyi/imclient/multicast/SystemMessageResultResultTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-client/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" beforeDir="false" afterPath="$PROJECT_DIR$/im-client/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/contant/IMConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/contant/IMConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/contant/IMRedisKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/contant/IMRedisKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/enums/IMCmdType.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/enums/IMCmdType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/enums/IMListenerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/enums/IMListenerType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/enums/IMSendCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/enums/IMSendCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/enums/IMTerminalType.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/enums/IMTerminalType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/model/IMGroupMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/model/IMGroupMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/model/IMHeartbeatInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/model/IMHeartbeatInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/model/IMLoginInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/model/IMLoginInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/model/IMPrivateMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/model/IMPrivateMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/model/IMRecvInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/model/IMRecvInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/model/IMSendInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/model/IMSendInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/model/IMSendResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/model/IMSendResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/model/IMSessionInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/model/IMSessionInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/model/IMSystemMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/model/IMSystemMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/model/IMUserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/model/IMUserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/mq/RedisMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/mq/RedisMQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/mq/RedisMQConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/mq/RedisMQConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/mq/RedisMQListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/annotation/RedisMQListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/mq/RedisMQPullTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/mq/RedisMQPullTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/mq/RedisMQTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/mq/RedisMQTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/serializer/DateToLongSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/serializer/DateToLongSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/util/CommaTextUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/util/CommaTextUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/util/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/bx/imcommon/util/ThreadPoolExecutorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/util/ThreadPoolExecutorFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/IMPlatformApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/IMPlatformApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/annotation/OnlineCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/annotation/OnlineCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/annotation/RedisLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/annotation/RedisLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/aspect/OnlineCheckAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/aspect/RedisLockAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/aspect/RedisLockAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/config/ICEServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/config/ICEServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/config/JwtProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/config/JwtProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/config/MinIoClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/config/MinIoClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/config/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/config/WebrtcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/config/WebrtcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/contant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/contant/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/contant/RedisKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/contant/RedisKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/controller/FriendController.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/controller/FriendController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/controller/GroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/controller/GroupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/controller/GroupMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/controller/GroupMessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/controller/PrivateMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/controller/PrivateMessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/controller/SystemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/controller/SystemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/controller/WebrtcGroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/controller/WebrtcGroupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/controller/WebrtcPrivateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/controller/WebrtcPrivateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/dto/GroupBanDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/dto/GroupBanDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/dto/GroupMessageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/dto/GroupMessageDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/dto/GroupUnbanDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/dto/GroupUnbanDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/dto/LoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/dto/LoginDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/dto/ModifyPwdDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/dto/ModifyPwdDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/dto/PrivateMessageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/dto/PrivateMessageDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/dto/RegisterDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/dto/RegisterDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/dto/UserBanDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/dto/UserBanDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/dto/WebrtcGroupAnswerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/dto/WebrtcGroupAnswerDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/dto/WebrtcGroupCandidateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/dto/WebrtcGroupCandidateDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/dto/WebrtcGroupDeviceDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/dto/WebrtcGroupDeviceDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/dto/WebrtcGroupFailedDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/dto/WebrtcGroupFailedDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/dto/WebrtcGroupInviteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/dto/WebrtcGroupInviteDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/dto/WebrtcGroupJoinDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/dto/WebrtcGroupJoinDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/dto/WebrtcGroupOfferDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/dto/WebrtcGroupOfferDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/dto/WebrtcGroupSetupDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/dto/WebrtcGroupSetupDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/entity/Friend.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/entity/Friend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/entity/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/entity/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/entity/GroupMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/entity/GroupMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/entity/GroupMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/entity/GroupMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/entity/PrivateMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/entity/PrivateMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/entity/SensitiveWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/entity/SensitiveWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/enums/FileType.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/enums/FileType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/enums/MessageStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/enums/MessageStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/enums/MessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/enums/MessageType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/enums/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/enums/ResultCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/enums/WebrtcMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/enums/WebrtcMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/exception/GlobalException.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/exception/GlobalException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/filter/CacheFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/filter/CacheFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/filter/CacheHttpServletRequestWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/filter/CacheHttpServletRequestWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/interceptor/AuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/interceptor/AuthInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/interceptor/XssInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/interceptor/XssInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/listener/GroupMessageListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/listener/PrivateMessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/listener/PrivateMessageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/listener/SystemMessageListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/mapper/FriendMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/mapper/FriendMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/mapper/GroupMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/mapper/GroupMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/mapper/GroupMemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/mapper/GroupMemberMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/mapper/GroupMessageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/mapper/GroupMessageMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/mapper/PrivateMessageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/mapper/PrivateMessageMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/mapper/SensitiveWordMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/mapper/SensitiveWordMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/result/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/result/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/result/ResultUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/result/ResultUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/service/FriendService.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/FriendService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/service/GroupMemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/GroupMemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/service/GroupMessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/GroupMessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/service/GroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/GroupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/service/PrivateMessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/PrivateMessageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/service/SensitiveWordService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/service/WebrtcGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/WebrtcGroupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/service/WebrtcPrivateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/WebrtcPrivateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/service/impl/FriendServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/impl/FriendServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/service/impl/GroupMemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/impl/GroupMemberServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/service/impl/GroupMessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/impl/GroupMessageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/service/impl/GroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/impl/GroupServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/service/impl/PrivateMessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/impl/PrivateMessageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/service/impl/SensitiveWordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/impl/SensitiveWordServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/service/impl/WebrtcGroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/impl/WebrtcGroupServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/service/impl/WebrtcPrivateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/impl/WebrtcPrivateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/service/thirdparty/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/thirdparty/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/session/SessionContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/session/SessionContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/session/UserSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/session/UserSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/session/WebrtcGroupSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/session/WebrtcGroupSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/session/WebrtcPrivateSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/session/WebrtcPrivateSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/session/WebrtcUserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/session/WebrtcUserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/task/GroupBannedConsumerTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/task/GroupBannedConsumerTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/task/GroupUnbanConsumerTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/task/GroupUnbanConsumerTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/task/UserBannedConsumerTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/task/UserBannedConsumerTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/util/BeanUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/util/BeanUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/util/DateTimeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/util/DateTimeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/util/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/util/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/util/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/util/ImageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/util/MinioUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/util/MinioUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/util/SensitiveFilterUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/util/SensitiveFilterUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/util/UserStateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/util/UserStateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/util/XssUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/util/XssUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/vo/FriendVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/vo/FriendVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/vo/GroupInviteVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/vo/GroupInviteVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/vo/GroupMemberVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/vo/GroupMemberVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/vo/GroupMessageVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/vo/GroupMessageVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/vo/GroupVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/vo/GroupVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/vo/LoginVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/vo/LoginVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/vo/OnlineTerminalVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/vo/OnlineTerminalVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/vo/PrivateMessageVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/vo/PrivateMessageVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/vo/SystemConfigVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/vo/SystemConfigVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/vo/SystemMessageVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/vo/SystemMessageVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/vo/UploadImageVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/vo/UploadImageVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/vo/UserVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/vo/UserVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/vo/WebrtcGroupFailedVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/vo/WebrtcGroupFailedVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/bx/implatform/vo/WebrtcGroupInfoVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/vo/WebrtcGroupInfoVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-platform/src/main/resources/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/IMServerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/IMServerApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/config/RedisConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/constant/ChannelAttrKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/contant/ChannelAttrKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/netty/IMChannelHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/netty/IMChannelHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/netty/IMServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/netty/IMServerGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/netty/IMServerGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/netty/UserChannelCtxMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/netty/UserChannelCtxMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/netty/processor/AbstractMessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/netty/processor/AbstractMessageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/netty/processor/GroupMessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/netty/processor/GroupMessageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/netty/processor/HeartbeatProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/netty/processor/HeartbeatProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/netty/processor/LoginProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/netty/processor/LoginProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/netty/processor/PrivateMessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/netty/processor/PrivateMessageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/netty/processor/ProcessorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/netty/processor/ProcessorFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/netty/processor/SystemMessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/netty/processor/SystemMessageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/netty/tcp/TcpSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/netty/tcp/TcpSocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/netty/tcp/endecode/MessageProtocolDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/netty/tcp/endecode/MessageProtocolDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/netty/tcp/endecode/MessageProtocolEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/netty/tcp/endecode/MessageProtocolEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/netty/ws/WebSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/netty/ws/WebSocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/netty/ws/endecode/MessageProtocolDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/netty/ws/endecode/MessageProtocolDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/netty/ws/endecode/MessageProtocolEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/netty/ws/endecode/MessageProtocolEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/task/AbstractPullMessageTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/task/AbstractPullMessageTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/task/PullGroupMessageTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/task/PullGroupMessageTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/task/PullPrivateMessageTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/task/PullPrivateMessageTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/task/PullSystemMessageTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/task/PullSystemMessageTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/bx/imserver/util/SpringContextHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/util/SpringContextHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-server/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/common/date.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/common/emotion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/common/enums.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/common/messageType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/common/recorder-app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/common/recorder-h5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/common/request.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/common/wssocket.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/components/chat-at-box/chat-at-box.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/components/chat-group-readed/chat-group-readed.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/components/chat-item/chat-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/components/chat-message-item/chat-message-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/components/chat-record/chat-record.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/components/file-upload/file-upload.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/components/friend-item/friend-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/components/group-item/group-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/components/group-member-selector/group-member-selector.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/components/group-rtc-join/group-rtc-join.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/components/head-image/head-image.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/components/image-upload/image-upload.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/components/loading/loading.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/components/pop-menu/pop-menu.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/hybrid/html/rtc-group/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/hybrid/html/rtc-private/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/pages.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/pages/chat/chat-box.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/pages/chat/chat-group-video.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/pages/chat/chat-private-video.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/pages/chat/chat.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/pages/common/user-info.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/pages/friend/friend-add.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/pages/friend/friend.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/pages/group/group-edit.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/pages/group/group-info.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/pages/group/group-invite.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/pages/group/group-member.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/pages/group/group.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/pages/login/login.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/pages/mine/mine-edit.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/pages/mine/mine-password.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/pages/mine/mine.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/pages/register/register.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/ssl/cert.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/ssl/cert.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/17.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/19.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/22.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/23.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/24.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/26.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/27.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/28.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/29.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/30.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/31.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/33.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/34.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/35.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/36.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/38.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/39.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/40.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/41.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/42.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/43.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/44.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/45.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/46.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/47.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/48.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/49.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/51.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/52.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/53.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/54.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/55.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/56.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/emoji/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/icon/iconfont.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/icon/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/image/online_app.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/image/online_web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/logo/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/tarbar/chat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/tarbar/chat_active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/tarbar/friend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/tarbar/friend_active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/tarbar/group.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/tarbar/group_active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/tarbar/mine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/static/tarbar/mine_active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/store/chatStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/store/configStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/store/friendStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/store/groupStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/store/userStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni.promisify.adaptor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/lsj-upload/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/lsj-upload/components/lsj-upload/LsjFile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/lsj-upload/components/lsj-upload/lsj-upload.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/lsj-upload/hybrid/html/js/vue.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/lsj-upload/hybrid/html/uploadFile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/lsj-upload/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-badge/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-badge/components/uni-badge/uni-badge.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-badge/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-badge/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-calendar/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-calendar/components/uni-calendar/calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-calendar/components/uni-calendar/i18n/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-calendar/components/uni-calendar/i18n/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-calendar/components/uni-calendar/i18n/zh-Hans.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-calendar/components/uni-calendar/i18n/zh-Hant.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-calendar/components/uni-calendar/uni-calendar-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-calendar/components/uni-calendar/uni-calendar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-calendar/components/uni-calendar/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-calendar/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-calendar/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-card/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-card/components/uni-card/uni-card.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-card/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-card/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-collapse/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-collapse/components/uni-collapse-item/uni-collapse-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-collapse/components/uni-collapse/uni-collapse.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-collapse/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-collapse/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-combox/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-combox/components/uni-combox/uni-combox.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-combox/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-combox/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-countdown/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-countdown/components/uni-countdown/i18n/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-countdown/components/uni-countdown/i18n/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-countdown/components/uni-countdown/i18n/zh-Hans.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-countdown/components/uni-countdown/i18n/zh-Hant.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-countdown/components/uni-countdown/uni-countdown.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-countdown/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-countdown/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-data-checkbox/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-data-checkbox/components/uni-data-checkbox/uni-data-checkbox.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-data-checkbox/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-data-checkbox/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-data-picker/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-data-picker/components/uni-data-picker/keypress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-data-picker/components/uni-data-picker/uni-data-picker.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-data-picker/components/uni-data-pickerview/uni-data-picker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-data-picker/components/uni-data-pickerview/uni-data-pickerview.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-data-picker/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-data-picker/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-data-select/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-data-select/components/uni-data-select/uni-data-select.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-data-select/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-data-select/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-dateformat/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-dateformat/components/uni-dateformat/date-format.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-dateformat/components/uni-dateformat/uni-dateformat.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-dateformat/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-dateformat/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-datetime-picker/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-datetime-picker/components/uni-datetime-picker/calendar-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-datetime-picker/components/uni-datetime-picker/calendar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/zh-Hans.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/zh-Hant.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-datetime-picker/components/uni-datetime-picker/time-picker.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-datetime-picker/components/uni-datetime-picker/uni-datetime-picker.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-datetime-picker/components/uni-datetime-picker/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-datetime-picker/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-datetime-picker/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-drawer/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-drawer/components/uni-drawer/keypress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-drawer/components/uni-drawer/uni-drawer.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-drawer/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-drawer/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-easyinput/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-easyinput/components/uni-easyinput/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-easyinput/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-easyinput/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-fab/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-fab/components/uni-fab/uni-fab.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-fab/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-fab/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-fav/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-fav/components/uni-fav/i18n/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-fav/components/uni-fav/i18n/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-fav/components/uni-fav/i18n/zh-Hans.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-fav/components/uni-fav/i18n/zh-Hant.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-fav/components/uni-fav/uni-fav.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-fav/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-fav/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-file-picker/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-file-picker/components/uni-file-picker/choose-and-upload-file.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-file-picker/components/uni-file-picker/uni-file-picker.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-file-picker/components/uni-file-picker/upload-file.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-file-picker/components/uni-file-picker/upload-image.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-file-picker/components/uni-file-picker/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-file-picker/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-file-picker/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-forms/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-forms/components/uni-forms-item/uni-forms-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-forms/components/uni-forms/uni-forms.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-forms/components/uni-forms/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-forms/components/uni-forms/validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-forms/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-forms/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-goods-nav/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-goods-nav/components/uni-goods-nav/i18n/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-goods-nav/components/uni-goods-nav/i18n/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-goods-nav/components/uni-goods-nav/i18n/zh-Hans.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-goods-nav/components/uni-goods-nav/i18n/zh-Hant.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-goods-nav/components/uni-goods-nav/uni-goods-nav.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-goods-nav/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-goods-nav/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-grid/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-grid/components/uni-grid-item/uni-grid-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-grid/components/uni-grid/uni-grid.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-grid/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-grid/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-group/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-group/components/uni-group/uni-group.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-group/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-group/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-icons/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-icons/components/uni-icons/icons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-icons/components/uni-icons/uni-icons.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-icons/components/uni-icons/uniicons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-icons/components/uni-icons/uniicons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-icons/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-icons/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-indexed-list/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-indexed-list/components/uni-indexed-list/uni-indexed-list-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-indexed-list/components/uni-indexed-list/uni-indexed-list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-indexed-list/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-indexed-list/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-link/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-link/components/uni-link/uni-link.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-link/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-link/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-list/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-list/components/uni-list-ad/uni-list-ad.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-list/components/uni-list-chat/uni-list-chat.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-list/components/uni-list-chat/uni-list-chat.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-list/components/uni-list-item/uni-list-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-list/components/uni-list/uni-list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-list/components/uni-list/uni-refresh.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-list/components/uni-list/uni-refresh.wxs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-list/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-list/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-load-more/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-load-more/components/uni-load-more/i18n/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-load-more/components/uni-load-more/i18n/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-load-more/components/uni-load-more/i18n/zh-Hans.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-load-more/components/uni-load-more/i18n/zh-Hant.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-load-more/components/uni-load-more/uni-load-more.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-load-more/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-load-more/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-nav-bar/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-status-bar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-nav-bar/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-nav-bar/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-notice-bar/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-notice-bar/components/uni-notice-bar/uni-notice-bar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-notice-bar/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-notice-bar/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-number-box/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-number-box/components/uni-number-box/uni-number-box.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-number-box/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-number-box/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-pagination/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-pagination/components/uni-pagination/i18n/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-pagination/components/uni-pagination/i18n/es.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-pagination/components/uni-pagination/i18n/fr.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-pagination/components/uni-pagination/i18n/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-pagination/components/uni-pagination/i18n/zh-Hans.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-pagination/components/uni-pagination/i18n/zh-Hant.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-pagination/components/uni-pagination/uni-pagination.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-pagination/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-pagination/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-popup/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-popup/components/uni-popup-dialog/keypress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-popup/components/uni-popup-dialog/uni-popup-dialog.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-popup/components/uni-popup-message/uni-popup-message.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-popup/components/uni-popup-share/uni-popup-share.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-popup/components/uni-popup/i18n/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-popup/components/uni-popup/i18n/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-popup/components/uni-popup/i18n/zh-Hans.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-popup/components/uni-popup/i18n/zh-Hant.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-popup/components/uni-popup/keypress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-popup/components/uni-popup/popup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-popup/components/uni-popup/uni-popup.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-popup/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-popup/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-rate/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-rate/components/uni-rate/uni-rate.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-rate/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-rate/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-row/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-row/components/uni-col/uni-col.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-row/components/uni-row/uni-row.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-row/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-row/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-scss/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-scss/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-scss/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-scss/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-scss/styles/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-scss/styles/setting/_border.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-scss/styles/setting/_color.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-scss/styles/setting/_radius.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-scss/styles/setting/_space.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-scss/styles/setting/_styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-scss/styles/setting/_text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-scss/styles/setting/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-scss/styles/tools/functions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-scss/theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-scss/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-search-bar/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-search-bar/components/uni-search-bar/i18n/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-search-bar/components/uni-search-bar/i18n/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-search-bar/components/uni-search-bar/i18n/zh-Hans.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-search-bar/components/uni-search-bar/i18n/zh-Hant.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-search-bar/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-search-bar/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-section/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-section/components/uni-section/uni-section.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-section/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-section/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-segmented-control/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-segmented-control/components/uni-segmented-control/uni-segmented-control.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-segmented-control/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-segmented-control/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-steps/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-steps/components/uni-steps/uni-steps.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-steps/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-steps/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-swipe-action/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-swipe-action/components/uni-swipe-action-item/bindingx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-swipe-action/components/uni-swipe-action-item/isPC.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-swipe-action/components/uni-swipe-action-item/mpalipay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-swipe-action/components/uni-swipe-action-item/mpother.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-swipe-action/components/uni-swipe-action-item/mpwxs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-swipe-action/components/uni-swipe-action-item/render.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-swipe-action/components/uni-swipe-action-item/uni-swipe-action-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-swipe-action/components/uni-swipe-action-item/wx.wxs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-swipe-action/components/uni-swipe-action/uni-swipe-action.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-swipe-action/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-swipe-action/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-swiper-dot/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-swiper-dot/components/uni-swiper-dot/uni-swiper-dot.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-swiper-dot/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-swiper-dot/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-table/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-table/components/uni-table/uni-table.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-table/components/uni-tbody/uni-tbody.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-table/components/uni-td/uni-td.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-table/components/uni-th/filter-dropdown.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-table/components/uni-th/uni-th.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-table/components/uni-thead/uni-thead.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-table/components/uni-tr/table-checkbox.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-table/components/uni-tr/uni-tr.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-table/i18n/en.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-table/i18n/es.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-table/i18n/fr.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-table/i18n/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-table/i18n/zh-Hans.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-table/i18n/zh-Hant.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-table/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-table/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-tag/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-tag/components/uni-tag/uni-tag.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-tag/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-tag/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-title/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-title/components/uni-title/uni-title.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-title/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-title/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-tooltip/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-tooltip/components/uni-tooltip/uni-tooltip.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-tooltip/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-tooltip/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-transition/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-transition/components/uni-transition/createAnimation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-transition/components/uni-transition/uni-transition.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-transition/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-transition/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-ui/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-ui/components/uni-ui/uni-ui.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-ui/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uni-ui/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/changelog.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u--form/u--form.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u--image/u--image.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u--input/u--input.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u--text/u--text.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u--textarea/u--textarea.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-action-sheet/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-action-sheet/u-action-sheet.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-album/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-album/u-album.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-alert/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-alert/u-alert.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-avatar-group/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-avatar-group/u-avatar-group.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-avatar/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-avatar/u-avatar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-back-top/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-back-top/u-back-top.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-badge/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-badge/u-badge.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-button/nvue.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-button/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-button/u-button.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-button/vue.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-calendar/header.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-calendar/month.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-calendar/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-calendar/u-calendar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-calendar/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-car-keyboard/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-car-keyboard/u-car-keyboard.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-cell-group/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-cell-group/u-cell-group.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-cell/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-cell/u-cell.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-checkbox-group/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-checkbox-group/u-checkbox-group.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-checkbox/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-checkbox/u-checkbox.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-circle-progress/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-circle-progress/u-circle-progress.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-code-input/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-code-input/u-code-input.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-code/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-code/u-code.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-col/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-col/u-col.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-collapse-item/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-collapse-item/u-collapse-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-collapse/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-collapse/u-collapse.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-column-notice/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-column-notice/u-column-notice.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-copy/u-copy.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-count-down/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-count-down/u-count-down.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-count-down/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-count-to/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-count-to/u-count-to.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-datetime-picker/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-datetime-picker/u-datetime-picker.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-divider/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-divider/u-divider.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-dropdown-item/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-dropdown-item/u-dropdown-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-dropdown/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-dropdown/u-dropdown.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-empty/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-empty/u-empty.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-form-item/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-form-item/u-form-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-form/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-form/u-form.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-gap/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-gap/u-gap.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-grid-item/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-grid-item/u-grid-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-grid/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-grid/u-grid.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-icon/icons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-icon/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-icon/u-icon.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-image/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-image/u-image.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-index-anchor/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-index-anchor/u-index-anchor.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-index-item/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-index-item/u-index-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-index-list/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-index-list/u-index-list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-input/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-input/u-input.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-keyboard/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-keyboard/u-keyboard.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-lazy-load/u-lazy-load.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-line-progress/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-line-progress/u-line-progress.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-line/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-line/u-line.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-link/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-link/u-link.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-list-item/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-list-item/u-list-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-list/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-list/u-list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-loading-icon/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-loading-icon/u-loading-icon.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-loading-page/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-loading-page/u-loading-page.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-loadmore/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-loadmore/u-loadmore.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-message-input/u-message-input.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-modal/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-modal/u-modal.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-navbar/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-navbar/u-navbar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-no-network/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-no-network/u-no-network.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-notice-bar/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-notice-bar/u-notice-bar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-notify/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-notify/u-notify.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-number-box/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-number-box/u-number-box.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-number-keyboard/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-number-keyboard/u-number-keyboard.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-overlay/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-overlay/u-overlay.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-parse/node/node.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-parse/parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-parse/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-parse/u-parse.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-picker-column/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-picker-column/u-picker-column.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-picker/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-picker/u-picker.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-popup/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-popup/u-popup.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-qrcode/qrcode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-qrcode/u-qrcode.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-radio-group/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-radio-group/u-radio-group.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-radio/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-radio/u-radio.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-rate/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-rate/u-rate.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-read-more/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-read-more/u-read-more.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-row-notice/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-row-notice/u-row-notice.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-row/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-row/u-row.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-safe-bottom/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-safe-bottom/u-safe-bottom.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-scroll-list/nvue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-scroll-list/other.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-scroll-list/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-scroll-list/scrollWxs.wxs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-scroll-list/u-scroll-list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-search/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-search/u-search.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-skeleton/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-skeleton/u-skeleton.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-slider/mpother.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-slider/mpwxs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-slider/mpwxs.wxs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-slider/nvue - 副本.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-slider/nvue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-slider/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-slider/u-slider.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-status-bar/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-status-bar/u-status-bar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-steps-item/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-steps-item/u-steps-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-steps/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-steps/u-steps.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-sticky/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-sticky/u-sticky.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-subsection/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-subsection/u-subsection.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-swipe-action-item/alipay.sjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-swipe-action-item/index - backup.wxs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-swipe-action-item/index.wxs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-swipe-action-item/nvue - backup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-swipe-action-item/nvue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-swipe-action-item/other.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-swipe-action-item/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-swipe-action-item/u-swipe-action-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-swipe-action-item/wxs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-swipe-action/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-swipe-action/u-swipe-action.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-swiper-indicator/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-swiper-indicator/u-swiper-indicator.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-swiper/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-swiper/u-swiper.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-switch/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-switch/u-switch.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-tabbar-item/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-tabbar-item/u-tabbar-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-tabbar/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-tabbar/u-tabbar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-table/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-table/u-table.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-tabs-item/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-tabs-item/u-tabs-item.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-tabs/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-tabs/u-tabs.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-tag/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-tag/u-tag.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-td/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-td/u-td.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-text/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-text/u-text.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-text/value.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-textarea/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-textarea/u-textarea.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-toast/u-toast.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-toolbar/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-toolbar/u-toolbar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-tooltip/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-tooltip/u-tooltip.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-tr/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-tr/u-tr.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-transition/nvue-ani-map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-transition/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-transition/transition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-transition/u-transition.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-transition/vue.ani-style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-upload/mixin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-upload/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-upload/u-upload.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-upload/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/u-waterfall/u-waterfall.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/components/uview-plus/uview-plus.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/color.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/actionSheet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/album.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/alert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/avatar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/avatarGroup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/backtop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/badge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/carKeyboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/cell.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/cellGroup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/checkbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/checkboxGroup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/circleProgress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/codeInput.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/col.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/collapse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/collapseItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/columnNotice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/countDown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/countTo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/datetimePicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/divider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/empty.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/formItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/gap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/grid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/gridItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/icon.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/indexAnchor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/indexList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/input.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/keyboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/line.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/lineProgress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/link.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/listItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/loadingIcon.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/loadingPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/loadmore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/modal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/navbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/noNetwork.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/noticeBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/notify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/numberBox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/numberKeyboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/overlay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/picker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/popup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/radio.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/radioGroup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/rate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/readMore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/row.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/rowNotice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/scrollList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/section.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/skeleton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/statusBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/steps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/stepsItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/sticky.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/subsection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/swipeAction.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/swipeActionItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/swiper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/swipterIndicator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/switch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/tabbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/tabbarItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/tabs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/tag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/text.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/textarea.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/toast.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/toolbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/transition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/props/upload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/config/zIndex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/css/color.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/css/common.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/css/components.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/css/flex.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/css/h5.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/css/mixin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/css/mp.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/css/nvue.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/css/vue.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/function/colorGradient.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/function/debounce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/function/digit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/function/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/function/platform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/function/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/function/throttle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/luch-request/adapters/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/luch-request/core/InterceptorManager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/luch-request/core/Request.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/luch-request/core/buildFullPath.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/luch-request/core/defaults.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/luch-request/core/dispatchRequest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/luch-request/core/mergeConfig.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/luch-request/core/settle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/luch-request/helpers/buildURL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/luch-request/helpers/combineURLs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/luch-request/helpers/isAbsoluteURL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/luch-request/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/luch-request/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/luch-request/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/luch-request/utils/clone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/mixin/button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/mixin/mixin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/mixin/mpMixin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/mixin/mpShare.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/mixin/openType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/mixin/style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/mixin/touch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/util/async-validator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/util/calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/util/emitter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/util/route.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/libs/vue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/_common.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/actionSheet.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/album.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/alert.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/avatar.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/avatarGroup.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/backTop.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/badge.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/button.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/calendar.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/cell.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/cellGroup.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/checkbox.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/checkboxGroup.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/code.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/codeInput.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/col.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/collapse.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/collapseItem.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/countDown.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/countTo.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/datetimePicker.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/divider.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/empty.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/form.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/formItem.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/gap.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/grid.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/gridItem.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/icon.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/image.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/indexAnchor.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/indexItem.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/indexList.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/input.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/keyboard.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/line.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/lineProgress.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/link.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/list.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/listItem.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/loadMore.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/loadingIcon.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/loadingPage.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/modal.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/navbar.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/noNetwork.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/noticeBar.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/notify.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/numberBox.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/overlay.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/parse.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/picker.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/popup.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/radio.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/radioGroup.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/rate.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/readMore.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/row.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/scrollList.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/search.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/skeleton.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/slider.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/steps.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/stepsItem.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/sticky.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/subsection.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/swipeAction.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/swipeActionItem.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/swiper.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/swiperIndicator.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/switch.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/tabbar.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/tabbarItem.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/tabs.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/tag.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/text.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/textarea.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/toast.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/tooltip.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/transition.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/comps/upload.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/uni_modules/uview-plus/types/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-uniapp/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/.env.development" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/.env.production" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/public/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/api/camera.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/api/date.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/api/element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/api/emotion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/api/enums.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/api/eventBus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/api/httpRequest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/api/messageType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/api/rtcGroupApi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/api/rtcPrivateApi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/api/webrtc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/api/wssocket.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/audio/call.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/audio/tip.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/17.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/19.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/22.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/23.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/24.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/26.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/27.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/28.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/29.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/30.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/31.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/33.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/34.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/35.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/36.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/38.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/39.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/40.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/41.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/42.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/43.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/44.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/45.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/46.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/47.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/48.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/49.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/51.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/52.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/53.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/54.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/55.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/56.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/emoji/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/iconfont/iconfont.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/iconfont/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/image/icp_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/image/online_app.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/image/online_web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/assets/style/global.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/chat/ChatAtBox.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/chat/ChatBox.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/chat/ChatGroupMember.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/chat/ChatGroupReaded.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/chat/ChatGroupSide.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/chat/ChatHistory.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/chat/ChatInput.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/chat/ChatItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/chat/ChatMessageItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/chat/ChatRecord.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/common/Emotion.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/common/FileUpload.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/common/FullImage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/common/HeadImage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/common/Icp.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/common/RightMenu.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/common/UserInfo.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/friend/AddFriend.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/friend/FriendItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/group/AddGroupMember.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/group/GroupItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/group/GroupMember.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/group/GroupMemberItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/group/GroupMemberSelector.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/rtc/RtcGroupJoin.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/rtc/RtcGroupVideo.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/rtc/RtcPrivateAcceptor.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/rtc/RtcPrivateVideo.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/components/setting/Setting.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/ssl/cert.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/ssl/cert.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/store/chatStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/store/configStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/store/friendStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/store/groupStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/store/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/store/uiStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/store/userStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/utils/directive/dialogDrag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/view/Chat.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/view/Friend.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/view/Group.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/view/Home.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/view/Login.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/src/view/Register.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/im-web/vue.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/截图/app/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/截图/app/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/截图/h5二维码.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/截图/web/好友列表.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/截图/web/私聊.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/截图/web/群列表.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/截图/web/群聊.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/截图/web/群视频.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/截图/交流群2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/截图/消息推送集群化.jpg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="/usr/local/apache-maven-3.6.3" />
+        <option name="localRepository" value="/usr/local/apache-maven-3.6.3/maven-repo" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="/usr/local/apache-maven-3.6.3/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="#JAVA_HOME" />
+        <option name="workspaceImportForciblyTurnedOn" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_HOME" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2l3Ko7cO7d0jCk8IKaDOhhSVoEh" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.IMPlatformApp (1).executor": "Run",
+    "Spring Boot.IMServerApp.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/luoyi/Workspace/zhuyu-im/im-commom/src/main/java/com/luoyi/imcommon",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.notifications",
+    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon" />
+      <recent name="$PROJECT_DIR$/im-platform/src/main/resources/static" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.bx.imserver.task" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bx.implatform.filter" />
+      <recent name="com.bx.implatform.contant" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.IMPlatformApp (1)">
+    <configuration name="IMPlatformApp (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="im-platform" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bx.implatform.IMPlatformApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bx.implatform.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IMPlatformApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="im-platform" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.luoyi.implatform.IMPlatformApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IMServerApp (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="im-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.luoyi.imserver.IMServerApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IMServerApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="im-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bx.imserver.IMServerApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.IMPlatformApp" />
+      <item itemvalue="Spring Boot.IMServerApp (1)" />
+      <item itemvalue="Spring Boot.IMServerApp" />
+      <item itemvalue="Spring Boot.IMPlatformApp (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.IMPlatformApp (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-995e55e7" />
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-53826d6a" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="80dc736a-4942-4a07-875f-48e85e2e13c5" name="Default Changelist" comment="" />
+      <created>1724403493614</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724403493614</updated>
+      <workItem from="1724403494929" duration="1677000" />
+      <workItem from="1724655842219" duration="34939000" />
+      <workItem from="1724820559321" duration="116000" />
+      <workItem from="1724822349320" duration="143000" />
+      <workItem from="1724822579861" duration="33000" />
+      <workItem from="1724822624299" duration="941000" />
+      <workItem from="1724827965379" duration="148000" />
+      <workItem from="1724828123451" duration="60887000" />
+      <workItem from="1725278781586" duration="2859000" />
+      <workItem from="1725344245625" duration="2599000" />
+      <workItem from="1725347116636" duration="71000" />
+      <workItem from="1725807182990" duration="7866000" />
+      <workItem from="1725969031537" duration="2643000" />
+      <workItem from="1726418990130" duration="7303000" />
+      <workItem from="1726647437082" duration="8767000" />
+      <workItem from="1727006796924" duration="27278000" />
+      <workItem from="1727686064465" duration="6253000" />
+      <workItem from="1728385650659" duration="571000" />
+      <workItem from="1728542464428" duration="5494000" />
+      <workItem from="1729241657285" duration="169000" />
+      <workItem from="1729241850125" duration="376000" />
+      <workItem from="1729242244510" duration="453000" />
+      <workItem from="1730776418954" duration="876000" />
+      <workItem from="1730777442064" duration="9374000" />
+      <workItem from="1730962813432" duration="1690000" />
+      <workItem from="1730985244159" duration="6505000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
