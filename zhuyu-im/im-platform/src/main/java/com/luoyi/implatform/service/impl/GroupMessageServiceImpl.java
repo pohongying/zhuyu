@@ -261,7 +261,7 @@ public class GroupMessageServiceImpl extends ServiceImpl<GroupMessageMapper, Gro
         // 原来的已读消息位置
         Object maxReadedId = redisTemplate.opsForHash().get(key, session.getUserId().toString());
         // 记录已读消息位置
-        redisTemplate.opsForHash().put(key, session.getUserId().toString(), message.getId());
+        redisTemplate.opsForHash().put(key, session.getUserId().toString(), message.getId()); //todo
         // 推送消息回执，刷新已读人数显示
         wrapper = Wrappers.lambdaQuery();
         wrapper.eq(GroupMessage::getGroupId, groupId);
