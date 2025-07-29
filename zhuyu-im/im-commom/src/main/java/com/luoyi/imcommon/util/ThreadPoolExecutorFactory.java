@@ -77,6 +77,10 @@ public final class ThreadPoolExecutorFactory {
         }
     }
 
+    /**
+     * 执行任务
+     * @param runnable
+     */
     public static void execute(Runnable runnable) {
         if (runnable == null) {
             return;

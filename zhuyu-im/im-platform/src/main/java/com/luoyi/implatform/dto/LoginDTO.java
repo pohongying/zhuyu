@@ -25,8 +25,8 @@ public class LoginDTO {
     @Schema(description = "用户密码")
     private String password;
 
-    @NotEmpty(message = "验证码不可为空")
-    @Schema(description = "验证码")
-    private String code;
+//    @NotEmpty(message = "验证码不可为空")
+//    @Schema(description = "验证码")
+//    private String code;
 
 }

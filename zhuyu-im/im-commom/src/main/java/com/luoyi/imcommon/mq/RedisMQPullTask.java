@@ -73,7 +73,7 @@ public class RedisMQPullTask implements CommandLineRunner {
                                 }
                             }
                             if (!datas.isEmpty()) {
-                                consumer.onMessage(datas);     // 批量发消息
+                                consumer.onMessage(datas);     // 消息监听
                             }
                         }
                     } catch (Exception e) {

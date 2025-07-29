@@ -30,6 +30,7 @@ public class PrivateMessageProcessor extends AbstractMessageProcessor<IMRecvInfo
         IMUserInfo receiver = recvInfo.getReceivers().get(0);
         log.info("接收到私聊消息，发送者:{},接收者:{}，内容:{}", sender.getId(), receiver.getId(), recvInfo.getData());
         try {
+            // todo 这一步非常非常重要！！
             ChannelHandlerContext channelCtx = UserChannelCtxMap.getChannelCtx(receiver.getId(), receiver.getTerminal());
             if (!Objects.isNull(channelCtx)) {
                 // 推送消息到用户

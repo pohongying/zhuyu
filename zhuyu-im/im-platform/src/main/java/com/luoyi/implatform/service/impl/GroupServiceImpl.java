@@ -1,7 +1,25 @@
 package com.luoyi.implatform.service.impl;
 
+import java.util.Collections;
+import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -11,7 +29,11 @@ import com.luoyi.imcommon.model.IMUserInfo;
 import com.luoyi.imcommon.util.CommaTextUtils;
 import com.luoyi.implatform.contant.Constant;
 import com.luoyi.implatform.contant.RedisKey;
-import com.luoyi.implatform.entity.*;
+import com.luoyi.implatform.entity.Friend;
+import com.luoyi.implatform.entity.Group;
+import com.luoyi.implatform.entity.GroupMember;
+import com.luoyi.implatform.entity.GroupMessage;
+import com.luoyi.implatform.entity.User;
 import com.luoyi.implatform.enums.MessageStatus;
 import com.luoyi.implatform.enums.MessageType;
 import com.luoyi.implatform.exception.GlobalException;
@@ -28,23 +50,13 @@ import com.luoyi.implatform.vo.GroupInviteVO;
 import com.luoyi.implatform.vo.GroupMemberVO;
 import com.luoyi.implatform.vo.GroupMessageVO;
 import com.luoyi.implatform.vo.GroupVO;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.cache.annotation.CacheConfig;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.Cacheable;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.util.*;
-import java.util.stream.Collectors;
 
 @Slf4j
 @Service
 @RequiredArgsConstructor   // todo 构造注入
 @CacheConfig(cacheNames = RedisKey.IM_CACHE_GROUP)
 public class GroupServiceImpl extends ServiceImpl<GroupMapper, Group> implements GroupService {
+
     private final UserService userService;
     private final GroupMemberService groupMemberService;
     private final GroupMessageMapper groupMessageMapper;
@@ -129,6 +141,8 @@ public class GroupServiceImpl extends ServiceImpl<GroupMapper, Group> implements
     @Override
     public void quitGroup(Long groupId) {
         Long userId = SessionContext.getSession().getUserId();
+        // userId 转换成List 类型
+        List<Long> userIds = Collections.singletonList(userId);
         Group group = this.getById(groupId);
         if (group.getOwnerId().equals(userId)) {
             throw new GlobalException("您是群主，不可退出群聊");
@@ -139,7 +153,7 @@ public class GroupServiceImpl extends ServiceImpl<GroupMapper, Group> implements
         String key = StrUtil.join(":", RedisKey.IM_GROUP_READED_POSITION, groupId);
         redisTemplate.opsForHash().delete(key, userId.toString());
         // 推送退出群聊提示
-        this.sendTipMessage(groupId, List.of(userId), "您已退出群聊");
+        this.sendTipMessage(groupId, userIds, "您已退出群聊");
         log.info("退出群聊，群聊id:{},群聊名称:{},用户id:{}", group.getId(), group.getName(), userId);
     }
 
@@ -159,7 +173,7 @@ public class GroupServiceImpl extends ServiceImpl<GroupMapper, Group> implements
         String key = StrUtil.join(":", RedisKey.IM_GROUP_READED_POSITION, groupId);
         redisTemplate.opsForHash().delete(key, userId.toString());
         // 推送踢出群聊提示
-        this.sendTipMessage(groupId, List.of(userId), "您已被移出群聊");
+        this.sendTipMessage(groupId, Collections.singletonList(userId), "您已被移出群聊");
         log.info("踢出群聊，群聊id:{},群聊名称:{},用户id:{}", group.getId(), group.getName(), userId);
     }
 
@@ -217,8 +231,7 @@ public class GroupServiceImpl extends ServiceImpl<GroupMapper, Group> implements
         // 转vo
         return groups.stream().map(group -> {
             GroupVO vo = BeanUtils.copyProperties(group, GroupVO.class);
-            GroupMember member =
-                groupMembers.stream().filter(m -> group.getId().equals(m.getGroupId())).findFirst().get();
+            GroupMember member = groupMembers.stream().filter(m -> group.getId().equals(m.getGroupId())).findFirst().get();
             vo.setShowNickName(StrUtil.blankToDefault(member.getRemarkNickName(), session.getNickName()));
             vo.setShowGroupName(StrUtil.blankToDefault(member.getRemarkGroupName(), group.getName()));
             vo.setQuit(member.getQuit());
@@ -242,16 +255,16 @@ public class GroupServiceImpl extends ServiceImpl<GroupMapper, Group> implements
         }
         // 找出好友信息
         List<Friend> friends = friendsService.findFriendByUserId(session.getUserId());
-        List<Friend> friendsList = vo.getFriendIds().stream()
-            .map(id -> friends.stream().filter(f -> f.getFriendId().equals(id)).findFirst().get())
-            .toList();
+        List<Friend> friendsList = vo.getFriendIds()
+                .stream()
+                .map(id -> friends.stream().filter(f -> f.getFriendId().equals(id)).findFirst().get())
+                .collect(Collectors.toList());
         if (friendsList.size() != vo.getFriendIds().size()) {
             throw new GlobalException("部分用户不是您的好友，邀请失败");
         }
         // 批量保存成员数据
         List<GroupMember> groupMembers = friendsList.stream().map(f -> {
-            Optional<GroupMember> optional =
-                members.stream().filter(m -> m.getUserId().equals(f.getFriendId())).findFirst();
+            Optional<GroupMember> optional = members.stream().filter(m -> m.getUserId().equals(f.getFriendId())).findFirst();
             GroupMember groupMember = optional.orElseGet(GroupMember::new);
             groupMember.setGroupId(vo.getGroupId());
             groupMember.setUserId(f.getFriendId());
@@ -269,8 +282,7 @@ public class GroupServiceImpl extends ServiceImpl<GroupMapper, Group> implements
         String memberNames = groupMembers.stream().map(GroupMember::getShowNickName).collect(Collectors.joining(","));
         String content = String.format("'%s'邀请'%s'加入了群聊", session.getNickName(), memberNames);
         this.sendTipMessage(vo.getGroupId(), userIds, content);
-        log.info("邀请进入群聊，群聊id:{},群聊名称:{},被邀请用户id:{}", group.getId(), group.getName(),
-            vo.getFriendIds());
+        log.info("邀请进入群聊，群聊id:{},群聊名称:{},被邀请用户id:{}", group.getId(), group.getName(), vo.getFriendIds());
     }
 
     @Override

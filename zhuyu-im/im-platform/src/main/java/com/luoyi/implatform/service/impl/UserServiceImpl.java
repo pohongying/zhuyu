@@ -54,19 +54,19 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     @Override
     public LoginVO login(LoginDTO dto) {
 
-        /**
-         * 验证码判断
-         */
-        HttpServletRequest httpServletRequest = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-        if ("POST".equals(httpServletRequest.getMethod())) {
-            HttpSession session1 = httpServletRequest.getSession();
-            String verify_code = (String) session1.getAttribute("verify_code");
-            String code = dto.getCode();
-
-            if (verify_code == null || !code.equalsIgnoreCase(verify_code)) {
-                throw new GlobalException(ResultCode.VERIFICATION_CODE_ERROR, "验证码错误");
-            }
-        }
+//        /**
+//         * 验证码判断
+//         */
+//        HttpServletRequest httpServletRequest = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+//        if ("POST".equals(httpServletRequest.getMethod())) {
+//            HttpSession session1 = httpServletRequest.getSession();
+//            String verify_code = (String) session1.getAttribute("verify_code");
+//            String code = dto.getCode();
+//
+//            if (verify_code == null || !code.equalsIgnoreCase(verify_code)) {
+//                throw new GlobalException(ResultCode.VERIFICATION_CODE_ERROR, "验证码错误");
+//            }
+//        }
 
 
         User user = this.findUserByUserName(dto.getUserName());

@@ -170,7 +170,7 @@ public class PrivateMessageServiceImpl extends ServiceImpl<PrivateMessageMapper,
             IMPrivateMessage<PrivateMessageVO> sendMessage = new IMPrivateMessage<>();
             sendMessage.setSender(new IMUserInfo(m.getSendId(), IMTerminalType.WEB.code()));
             sendMessage.setRecvId(session.getUserId());
-            sendMessage.setRecvTerminals(List.of(session.getTerminal()));
+            sendMessage.setRecvTerminals(Collections.singletonList(session.getTerminal()));
             sendMessage.setSendToSelf(false);
             sendMessage.setData(vo);
             sendMessage.setSendResult(true);
@@ -239,7 +239,7 @@ public class PrivateMessageServiceImpl extends ServiceImpl<PrivateMessageMapper,
         IMPrivateMessage<PrivateMessageVO> sendMessage = new IMPrivateMessage<>();
         sendMessage.setSender(new IMUserInfo(session.getUserId(), session.getTerminal()));
         sendMessage.setRecvId(session.getUserId());
-        sendMessage.setRecvTerminals(List.of(session.getTerminal()));
+        sendMessage.setRecvTerminals(Collections.singletonList(session.getTerminal()));
         sendMessage.setData(msgInfo);
         sendMessage.setSendToSelf(false);
         sendMessage.setSendResult(false);
