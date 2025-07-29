@@ -8,3 +8,6 @@ target/
 .vscode/
 *.pid
 CLAUDE.md
+# Java 编译产物
+*.class
+out/
