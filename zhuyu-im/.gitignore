@@ -1,0 +1,10 @@
+.idea/
+target/
+*.iml
+.DS_Store
+*.log
+*.log.*
+.flattened-pom.xml
+.vscode/
+*.pid
+CLAUDE.md
