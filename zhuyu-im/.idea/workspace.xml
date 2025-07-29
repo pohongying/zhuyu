@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6903721-9e08-4573-acff-b748f0c8a8c8" name="Changes" comment="feat(增加过滤1):">
-      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/ai/AiCodeHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/ai/AiCodeHelperService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/ai/AiCodeHelperServiceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/ai/guardrail/SafeInputGuardrail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/ai/listener/ChatModelListenerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/ai/mcp/McpConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/ai/model/QwenChatModelConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/ai/rag/RagConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/ai/tools/InterviewQuestionTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/controller/AiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/entity/Session.java" afterDir="false" />
+    <list default="true" id="e6903721-9e08-4573-acff-b748f0c8a8c8" name="Changes" comment="feat(增加ai):">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e93f8c54-07ab-4afc-9be5-ad6bd32dedfb.xml" beforeDir="false" />
@@ -23,14 +12,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e93f8c54-07ab-4afc-9be5-ad6bd32dedfb/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e93f8c54-07ab-4afc-9be5-ad6bd32dedfb/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e93f8c54-07ab-4afc-9be5-ad6bd32dedfb/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im-client/im-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/im-client/im-client.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/im-client/target/classes/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/im-client/target/classes/com/bx/imclient/IMAutoConfiguration.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/im-client/target/classes/com/bx/imclient/IMClient.class" beforeDir="false" />
@@ -42,9 +26,6 @@
       <change beforePath="$PROJECT_DIR$/im-client/target/classes/com/bx/imclient/task/GroupMessageResultResultTask.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/im-client/target/classes/com/bx/imclient/task/PrivateMessageResultResultTask.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/im-client/target/classes/com/bx/imclient/task/SystemMessageResultResultTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/im-commom/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/mq/RedisMQPullTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/mq/RedisMQPullTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/util/ThreadPoolExecutorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-commom/src/main/java/com/luoyi/imcommon/util/ThreadPoolExecutorFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/im-commom/target/classes/com/luoyi/imcommon/annotation/IMListener.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/im-commom/target/classes/com/luoyi/imcommon/annotation/OnlineCheck.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/im-commom/target/classes/com/luoyi/imcommon/annotation/RedisLock.class" beforeDir="false" />
@@ -77,8 +58,6 @@
       <change beforePath="$PROJECT_DIR$/im-commom/target/classes/com/luoyi/imcommon/util/JwtUtil.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/im-commom/target/classes/com/luoyi/imcommon/util/SpringContextHolder.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/im-commom/target/classes/com/luoyi/imcommon/util/ThreadPoolExecutorFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/im-platform/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/dto/LoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/dto/LoginDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/fastdfs/client/ErrorCode.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/fastdfs/client/FastDFSException.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/fastdfs/client/FastDFSUtil.java" beforeDir="false" />
@@ -90,11 +69,6 @@
       <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/fastdfs/web/FileObjectController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/rabbitmq/config/RabbitMQConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/rabbitmq/receiver/VerifyCodeReceiver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/impl/GroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/impl/GroupServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/impl/PrivateMessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/impl/PrivateMessageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/java/com/luoyi/implatform/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im-platform/src/main/resources/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/resources/application-test.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im-platform/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/im-platform/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/im-platform/target/classes/application-dev.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/im-platform/target/classes/application-prod.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/im-platform/target/classes/application-test.yml" beforeDir="false" />
@@ -223,9 +197,6 @@
       <change beforePath="$PROJECT_DIR$/im-platform/target/classes/com/bx/implatform/vo/WebrtcGroupInfoVO.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/im-platform/target/classes/logback.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/im-platform/target/classes/static/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/netty/processor/PrivateMessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/java/com/luoyi/imserver/netty/processor/PrivateMessageProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im-server/src/main/resources/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/resources/application-test.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/im-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/im-server/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/im-server/target/classes/application-dev.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/im-server/target/classes/application-prod.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/im-server/target/classes/application-test.yml" beforeDir="false" />
@@ -256,7 +227,6 @@
       <change beforePath="$PROJECT_DIR$/im-server/target/classes/com/bx/imserver/task/PullPrivateMessageTask.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/im-server/target/classes/com/bx/imserver/task/PullSystemMessageTask.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/im-server/target/classes/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -403,6 +373,7 @@
       <workItem from="1753586325096" duration="21710000" />
       <workItem from="1753712104452" duration="11470000" />
       <workItem from="1753807165656" duration="206000" />
+      <workItem from="1753807377182" duration="379000" />
     </task>
     <task id="LOCAL-00001" summary="improve">
       <option name="closed" value="true" />
@@ -428,7 +399,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753807351685</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat(增加ai):">
+      <option name="closed" value="true" />
+      <created>1753807601869</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1753807601869</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,6 +428,7 @@
     <MESSAGE value="improve" />
     <MESSAGE value="feat(增加过滤):" />
     <MESSAGE value="feat(增加过滤1):" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(增加过滤1):" />
+    <MESSAGE value="feat(增加ai):" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(增加ai):" />
   </component>
 </project>
